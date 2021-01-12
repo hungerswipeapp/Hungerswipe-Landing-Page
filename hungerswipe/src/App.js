@@ -7,7 +7,7 @@ import Footer from "./Shared/Footer"
 function App() {
   return (
     <div>
-      <Header/>
+      {/* <Header/> */}
       <Main/>
       <Footer/>
     </div>

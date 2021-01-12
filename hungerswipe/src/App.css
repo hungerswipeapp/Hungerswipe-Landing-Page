@@ -1,120 +1,169 @@
-* { padding: 0; margin: 0; }
 
-body { background-color: #FFF; color: #000000; font-family: Helvetica}
-
-a { color: #000000; }
-a:hover { color: #000000; }
-a:visited { color: #000000; }
-a:active { color: #000000; }
-a:focus { color: #000000; }
-
-/*Header Styles*/
-#header {
-    height: 80px;
-    text-transform: uppercase; }
-
-#header h1 {
-    margin: 0;
-    line-height: 80px;
-    font-size: 25px; }
-
-/*DropDown*/
-#dropDown {
-    background-color: #EEEEEE;
-    margin: 0 1px 0 1px;
-    display: none; }
-
-.list {
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    padding: 22px 0 8px 0; }
+  /* body {
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+  } */
+  /* Rectangle 16 */
 
 
-/*!
- * Hamburgers
- * @description Tasty CSS-animated hamburgers
- * @author Jonathan Suh @jonsuh
- * @site https://jonsuh.com/hamburgers
- * @link https://github.com/jonsuh/hamburgers
- */
-.hamburger {
-    display: inline-block;
-    cursor: pointer;
-    transition-property: opacity, filter;
-    transition-duration: 0.15s;
-    transition-timing-function: linear;
-    font: inherit;
-    color: inherit;
-    text-transform: none;
-    background-color: transparent;
-    border: 0;
-    margin: 0;
-    overflow: visible; }
-.hamburger:hover {
-    opacity: 0.7; }
 
-.hamburger-box {
-    width: 40px;
-    height: 80px;
-    display: inline-block;
-    position: relative; }
-
-.hamburger-inner {
-    display: block;
-    top: 50%;
-    margin-top: -2px; }
-.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-    width: 40px;
-    height: 4px;
-    background-color: #000;
-    border-radius: 4px;
+  
+  .login-box {
     position: absolute;
-    transition-property: transform;
-    transition-duration: 0.15s;
-    transition-timing-function: ease; }
-.hamburger-inner::before, .hamburger-inner::after {
-    content: "";
-    display: block; }
-.hamburger-inner::before {
-    top: -10px; }
-.hamburger-inner::after {
-    bottom: -10px; }
-
-/*
-   * 3DX
-   */
-.hamburger--3dx .hamburger-box {
-    perspective: 80px; }
-
-.hamburger--3dx .hamburger-inner {
-    transition: transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1); }
-.hamburger--3dx .hamburger-inner::before, .hamburger--3dx .hamburger-inner::after {
-    transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1); }
-
-.hamburger--3dx.is-active .hamburger-inner {
-    background-color: transparent;
-    transform: rotateY(180deg); }
-.hamburger--3dx.is-active .hamburger-inner::before {
-    transform: translate3d(0, 10px, 0) rotate(45deg); }
-.hamburger--3dx.is-active .hamburger-inner::after {
-    transform: translate3d(0, -10px, 0) rotate(-45deg); }
-
-/*
-   * 3DX Reverse
-   */
-.hamburger--3dx-r .hamburger-box {
-    perspective: 80px; }
-
-.hamburger--3dx-r .hamburger-inner {
-    transition: transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1); }
-.hamburger--3dx-r .hamburger-inner::before, .hamburger--3dx-r .hamburger-inner::after {
-    transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1); }
-
-.hamburger--3dx-r.is-active .hamburger-inner {
-    background-color: transparent;
-    transform: rotateY(-180deg); }
-.hamburger--3dx-r.is-active .hamburger-inner::before {
-    transform: translate3d(0, 10px, 0) rotate(45deg); }
-.hamburger--3dx-r.is-active .hamburger-inner::after {
-    transform: translate3d(0, -10px, 0) rotate(-45deg); }
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 255);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid rgb(3, 3, 3);
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #f807d0;
+    font-size: 12px;
+  }
+  
+  .login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color:#f807d0;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+  
+  .login-box a:hover {
+    background:#f807d0;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px#f807d0,
+                0 0 25px#f807d0,
+                0 0 50px#f807d0,
+                0 0 100px#f807d0;
+  }
+  
+  .login-box a span {
+    position: absolute;
+    display: block;
+  }
+  
+  .login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #f807d0);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #f807d0);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #f807d0);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #f807d0);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+  

@@ -5,120 +5,120 @@ class Footer extends Component {
     render() {
         return (
             <div>
-              <footer class="bg-white">
-          <div class="container mx-auto px-8">
-            <div class="w-full flex flex-col md:flex-row py-6">
-              <div class="flex-1 mb-6 text-black">
+              <footer className="bg-white">
+          <div className="container mx-auto px-8">
+            <div className="w-full flex flex-col md:flex-row py-6">
+              <div className="flex-1 mb-6 text-black">
                 <a
-                  class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
-                  href="#"
+                  className="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+                  href="/"
                 >
                   
                   LANDING
                 </a>
               </div>
-              <div class="flex-1">
-                <p class="uppercase text-gray-500 md:mb-6">Links</p>
-                <ul class="list-reset mb-6">
-                  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <div className="flex-1">
+                <p className="uppercase text-gray-500 md:mb-6">Links</p>
+                <ul className="list-reset mb-6">
+                  <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                     <a
-                      href="#"
-                      class="no-underline hover:underline text-gray-800 hover:text-pink-500"
+                      href="/"
+                      className="no-underline hover:underline text-gray-800 hover:text-pink-500"
                     >
                       FAQ
                     </a>
                   </li>
-                  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                     <a
-                      href="#"
-                      class="no-underline hover:underline text-gray-800 hover:text-pink-500"
+                      href="/"
+                      className="no-underline hover:underline text-gray-800 hover:text-pink-500"
                     >
                       Help
                     </a>
                   </li>
-                  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                     <a
-                      href="#"
-                      class="no-underline hover:underline text-gray-800 hover:text-pink-500"
+                      href="/"
+                      className="no-underline hover:underline text-gray-800 hover:text-pink-500"
                     >
                       Support
                     </a>
                   </li>
                 </ul>
               </div>
-              <div class="flex-1">
-                <p class="uppercase text-gray-500 md:mb-6">Legal</p>
-                <ul class="list-reset mb-6">
-                  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <div className="flex-1">
+                <p className="uppercase text-gray-500 md:mb-6">Legal</p>
+                <ul className="list-reset mb-6">
+                  <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                     <a
-                      href="#"
-                      class="no-underline hover:underline text-gray-800 hover:text-pink-500"
+                      href="/"
+                      className="no-underline hover:underline text-gray-800 hover:text-pink-500"
                     >
                       Terms
                     </a>
                   </li>
-                  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                     <a
-                      href="#"
-                      class="no-underline hover:underline text-gray-800 hover:text-pink-500"
+                      href="/"
+                      className="no-underline hover:underline text-gray-800 hover:text-pink-500"
                     >
                       Privacy
                     </a>
                   </li>
                 </ul>
               </div>
-              <div class="flex-1">
-                <p class="uppercase text-gray-500 md:mb-6">Social</p>
-                <ul class="list-reset mb-6">
-                  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <div className="flex-1">
+                <p className="uppercase text-gray-500 md:mb-6">Social</p>
+                <ul className="list-reset mb-6">
+                  <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                     <a
-                      href="#"
-                      class="no-underline hover:underline text-gray-800 hover:text-pink-500"
+                      href="/"
+                      className="no-underline hover:underline text-gray-800 hover:text-pink-500"
                     >
                       Facebook
                     </a>
                   </li>
-                  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                     <a
-                      href="#"
-                      class="no-underline hover:underline text-gray-800 hover:text-pink-500"
+                      href="/"
+                      className="no-underline hover:underline text-gray-800 hover:text-pink-500"
                     >
                       Linkedin
                     </a>
                   </li>
-                  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                     <a
-                      href="#"
-                      class="no-underline hover:underline text-gray-800 hover:text-pink-500"
+                      href="/"
+                      className="no-underline hover:underline text-gray-800 hover:text-pink-500"
                     >
                       Twitter
                     </a>
                   </li>
                 </ul>
               </div>
-              <div class="flex-1">
-                <p class="uppercase text-gray-500 md:mb-6">Company</p>
-                <ul class="list-reset mb-6">
-                  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <div className="flex-1">
+                <p className="uppercase text-gray-500 md:mb-6">Company</p>
+                <ul className="list-reset mb-6">
+                  <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                     <a
-                      href="#"
-                      class="no-underline hover:underline text-gray-800 hover:text-pink-500"
+                      href="/"
+                      className="no-underline hover:underline text-gray-800 hover:text-pink-500"
                     >
                       Official Blog
                     </a>
                   </li>
-                  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                     <a
-                      href="#"
-                      class="no-underline hover:underline text-gray-800 hover:text-pink-500"
+                      href="/"
+                      className="no-underline hover:underline text-gray-800 hover:text-pink-500"
                     >
                       About Us
                     </a>
                   </li>
-                  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                     <a
-                      href="#"
-                      class="no-underline hover:underline text-gray-800 hover:text-pink-500"
+                      href="/"
+                      className="no-underline hover:underline text-gray-800 hover:text-pink-500"
                     >
                       Contact
                     </a>
@@ -129,7 +129,7 @@ class Footer extends Component {
           </div>
           <a
             href="https://www.freepik.com/free-photos-vectors/background"
-            class="text-gray-500"
+            className="text-gray-500"
           >
             Background vector created by freepik - www.freepik.com
           </a>
