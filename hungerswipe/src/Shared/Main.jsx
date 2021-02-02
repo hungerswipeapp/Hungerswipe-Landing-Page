@@ -1,25 +1,21 @@
 import React from "react";
-import Modal from "./Shared/Modal";
+import Modal from "./Modal";
 
 function Main() {
-  
   return (
     <body className="leading-normal tracking-normal text-white gradient">
-      
-      <div className="pt-24">
+      <div className="">
         <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
           <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
             <p className="uppercase tracking-loose w-full"></p>
-            <h1 className="my-4 text-5xl font-bold leading-tight">
+            <h1 id="top" className="my-4 text-5xl font-bold leading-tight">
               Swipe Right
             </h1>
             <p className="leading-normal text-2xl mb-8">
               to your next restaurant destination right!
+              <Modal />
             </p>
           </div>
-
-          {/* add modal component here */}
-          <Modal />
 
           <div className="w-full md:w-3/5 py-6 text-center">
             <img
@@ -27,7 +23,6 @@ function Main() {
               src="hero.png"
               alt="scroll threw application"
             />
-            {/* add photo from old repo above this line */}
           </div>
         </div>
       </div>
@@ -69,23 +64,24 @@ function Main() {
       </div>
       <section className="bg-white border-b py-8">
         <div className="container max-w-5xl mx-auto m-8">
-          <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+          <h1 className="w-full my-2 text-5xl font-light leading-tight text-center text-gray-800">
             WHAT'S INSIDE
+            <h2 className="font-bold text-base">
+              Go to restaurants you like with the right match on HungerSwipe
+            </h2>
           </h1>
-          <h2>
-            Go to restaurants you like with the right match on HungerSwipe
-          </h2>
           <div className="w-full mb-4">
             <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
           </div>
           <div className="flex flex-wrap">
+            <img src="" />
             <div className="w-5/6 sm:w-1/2 p-6">
               <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
-                Lorem ipsum dolor sit amet
+                User Friendly
               </h3>
               <p className="text-gray-600 mb-8">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                at ipsum eu nunc commodo posuere et sit amet ligula.
+                With a modern user interface and easy user experience, it will
+                be fun and easy to navigate your way through the app
                 <br />
                 <br />
               </p>
@@ -94,11 +90,26 @@ function Main() {
             <div className="w-full sm:w-1/2 p-6 mt-6">
               <div className="align-middle">
                 <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
-                  Lorem ipsum dolor sit amet
+                  Swiping Left & Right
                 </h3>
                 <p className="text-gray-600 mb-8">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+                  Swipe left and right for an easy way of finding your favorite
+                  restaurants! It’s fun, easy, and ejoyable to do with your
+                  friends.
+                  <br />
+                  <br />
+                </p>
+              </div>
+            </div>
+            <div className="w-full sm:w-1/2 p-6 mt-6">
+              <div className="align-middle">
+                <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
+                  Managing Matches
+                </h3>
+                <p className="text-gray-600 mb-8">
+                  Swipe until you and your friends match on a restaurant. This
+                  will occur after everyone in the group has swiped right on the
+                  same restaurant or bar.
                   <br />
                   <br />
                 </p>
@@ -109,87 +120,78 @@ function Main() {
       </section>
       <section className="bg-white border-b py-8">
         <div className="container mx-auto flex flex-wrap pt-4 pb-12">
-          <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-            Title
+          <h1 className="w-full my-2 text-5xl font-light leading-tight text-center text-gray-800">
+            WHY USE HUNGERSWIPE
           </h1>
           <div className="w-full mb-4">
             <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
           </div>
           <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
             <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-              <a
-                href="/"
-                className="flex flex-wrap no-underline hover:no-underline"
-              >
+              <div className="flex flex-wrap no-underline hover:no-underline">
                 <p className="w-full text-gray-600 text-xs md:text-sm px-6">
-                  xGETTING STARTED
+                  Add SVG icon here
                 </p>
                 <div className="w-full font-bold text-xl text-gray-800 px-6">
-                  Lorem ipsum dolor sit amet.
+                  Easy To Customize
                 </div>
                 <p className="text-gray-800 text-base px-6 mb-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+                  Customize the way you want to use HungerSwipe by using our
+                  filters. Pick and choose the cuisine, price range, allergies
+                  and more before you start swiping!
                 </p>
-              </a>
+              </div>
             </div>
-            <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-              <div className="flex items-center justify-start">
-                <button className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                  Action
-                </button>
+          </div>
+
+          <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+            <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+              <div className="flex flex-wrap no-underline hover:no-underline">
+                <p className="w-full text-gray-600 text-xs md:text-sm px-6">
+                  Add SVG icon here
+                </p>
+                <div className="w-full font-bold text-xl text-gray-800 px-6">
+                  Your Notifications
+                </div>
+                <p className="text-gray-800 text-base px-6 mb-5">
+                  Receive notifications related to your account or other
+                  HungerSwipe announcements to stay up to date on what the
+                  nights plans are.
+                </p>
               </div>
             </div>
           </div>
           <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
             <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-              <a
-                href="/"
-                className="flex flex-wrap no-underline hover:no-underline"
-              >
+              <div className="flex flex-wrap no-underline hover:no-underline">
                 <p className="w-full text-gray-600 text-xs md:text-sm px-6">
-                  xGETTING STARTED
+                  Add SVG icon here
                 </p>
                 <div className="w-full font-bold text-xl text-gray-800 px-6">
-                  Lorem ipsum dolor sit amet.
+                  NightLife
                 </div>
                 <p className="text-gray-800 text-base px-6 mb-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+                  Ever want to go to the club or the bar with your frineds, but
+                  can’t decide which one to go to? Use our NightLife feature to
+                  begin swiping on bars and clubs near you!
                 </p>
-              </a>
-            </div>
-            <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-              <div className="flex items-center justify-center">
-                <button className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                  Action
-                </button>
               </div>
             </div>
           </div>
           <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
             <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-              <a
-                href="/"
-                className="flex flex-wrap no-underline hover:no-underline"
-              >
+              <div className="flex flex-wrap no-underline hover:no-underline">
                 <p className="w-full text-gray-600 text-xs md:text-sm px-6">
-                  xGETTING STARTED
+                  Add SVG icon here
                 </p>
                 <div className="w-full font-bold text-xl text-gray-800 px-6">
-                  Lorem ipsum dolor sit amet.
+                  SuperLike
                 </div>
                 <p className="text-gray-800 text-base px-6 mb-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+                  Want to let you friends know you really like a restaurant? Use
+                  our HungerSwipe SuperLike feature to show your favorite
+                  restaurant while swiping.
                 </p>
-              </a>
-            </div>
-            <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-              <div className="flex items-center justify-end">
-                <button className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                  Action
-                </button>
               </div>
             </div>
           </div>
@@ -237,7 +239,7 @@ function Main() {
           Main Hero Message to sell yourself!
         </h3>
         <button className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-          Action!
+          <a href="#top">Scroll to top</a>
         </button>
       </section>
     </body>

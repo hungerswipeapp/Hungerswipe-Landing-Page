@@ -155,4 +155,6 @@
       bottom: 100%;
     }
   }
-  
+  #top{
+    scroll-behavior: smooth;
+  }

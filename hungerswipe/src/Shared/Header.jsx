@@ -1,21 +1,20 @@
 import React from "react";
-import Modal from "./Modal";
 import "../Shared/logo-white.png";
 import "../Header.css";
 import $ from "jquery";
 
 function Header() {
-  $(window).scroll(function () {
-    var scroll = $(window).scrollTop();
-    if (scroll > 100) $("#drop").addClass("active");
-    else if (scroll < 80) $("#drop").removeClass("active");
-  });
+ // $(window).scroll(function () {
+  //   var scroll = $(window).scrollTop();
+  //   if (scroll > 100) $("#drop").addClass("active");
+  //   else if (scroll < 80) $("#drop").removeClass("active");
+  // });
 
-  $("#drop, nav ~ ul li").click(function () {
-    $("nav, #drop span").toggleClass("open");
-    $("body").toggleClass("hidden");
-    $(window).scrollTop(0);
-  });
+  // $("#drop, nav ~ ul li").click(function () {
+  //   $("nav, #drop span").toggleClass("open");
+  //   $("body").toggleClass("hidden");
+  //   $(window).scrollTop(0);
+  // });
 
   return (
     <div class="hamburger-menu">
@@ -45,11 +44,7 @@ function Header() {
             Log in
           </a>
         </li>
-        <li>
-          <a class="menu__item" href="#">
-           <Modal/>
-          </a>
-        </li>
+        
       </ul>
     </div>
   );
