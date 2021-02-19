@@ -88,7 +88,7 @@ export default function SpringModal() {
                   <label>Last Name</label>
                 </div>
                 <div class="user-box">
-                  <input type="password" name="" required="" />
+                  <input type="text" name="" required="" />
                   <label>First Name</label>
                 </div>
                 <div class="user-box">
