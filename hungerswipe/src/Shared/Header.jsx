@@ -34,7 +34,6 @@ function Header() {
             Log in
           </a>
         </li>
-        
       </ul>
     </div>
   );

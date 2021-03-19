@@ -12,7 +12,7 @@
     border-radius: 10px;
   }
   
-  .login-box h2 {
+  .login-box h2 div {
     margin: 0 0 30px;
     padding: 0;
     color: rgb(0, 0, 0);
@@ -28,10 +28,10 @@
     padding: 10px 0;
     font-size: 16px;
     margin-bottom: 30px;
-    border: none;
-    border-bottom: 1px solid rgb(3, 3, 3);
+    border-style: solid;
+    border-width: 2px;
+    border-image: linear-gradient(to right,#F169B6, #F3B3D6, #7DCEFB) 0 0 1 0;
     outline: none;
-    background: transparent;
   }
   .login-box .user-box label {
     position: absolute;
@@ -48,8 +48,9 @@
   .login-box .user-box input:valid ~ label {
     top: -20px;
     left: 0;
-    color: #f807d0;
+    color: #999999;
     font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
   }
   
   .login-box form a {

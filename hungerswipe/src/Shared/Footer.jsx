@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import { Icon } from '@iconify/react';
+import tiktokIcon from '@iconify-icons/simple-icons/tiktok';
+
+import logo from '../Assets/logo-white.png';
 class Footer extends Component {
     render() {
         return (
-            <div>
-              <footer className="bg-white">
+            <section>
+              <footer className="bg-black">
           <div className="container mx-auto px-8">
             <div className="w-full flex flex-col md:flex-row py-6">
               <div className="flex-1 mb-6 text-black">
@@ -12,40 +19,115 @@ class Footer extends Component {
                   href="/"
                 >
                   
-                  LANDING
+                  <img src={logo} alt="Logo"></img>
                 </a>
               </div>
               <div className="flex-1">
-                <p className="uppercase text-gray-500 md:mb-6">Links</p>
+                <p className="text-white md:mb-6 font-bold">Useful Links</p>
                 <ul className="list-reset mb-6">
                   <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                     <a
                       href="/"
-                      className="no-underline hover:underline text-gray-800 hover:text-pink-500"
+                      className="no-underline hover:underline text-white hover:text-pink-500"
                     >
-                      FAQ
+                      Home
                     </a>
                   </li>
                   <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                     <a
                       href="/"
-                      className="no-underline hover:underline text-gray-800 hover:text-pink-500"
+                      className="no-underline hover:underline text-white hover:text-pink-500"
                     >
-                      Help
+                      About Us
                     </a>
                   </li>
                   <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                     <a
                       href="/"
-                      className="no-underline hover:underline text-gray-800 hover:text-pink-500"
+                      className="no-underline hover:underline text-white hover:text-pink-500"
                     >
-                      Support
+                      Features
+                    </a>
+                  </li>
+                  <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                    <a
+                      href="/"
+                      className="no-underline hover:underline text-white hover:text-pink-500"
+                    >
+                      Screenshots
+                    </a>
+                  </li>
+                  <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                    <a
+                      href="/"
+                      className="no-underline hover:underline text-white hover:text-pink-500"
+                    >
+                      Contact
                     </a>
                   </li>
                 </ul>
               </div>
               <div className="flex-1">
-                <p className="uppercase text-gray-500 md:mb-6">Legal</p>
+                <p className="text-white md:mb-6 font-bold">Legal</p>
+                <ul className="list-reset mb-6">
+                  <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                    <a
+                      href="/"
+                      className="no-underline hover:underline text-white hover:text-pink-500"
+                    >
+                      Terms
+                    </a>
+                  </li>
+                  <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                    <a
+                      href="/"
+                      className="no-underline hover:underline text-white hover:text-pink-500"
+                    >
+                      Privacy
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="flex-1">
+                <p className="text-white md:mb-6 font-bold">Social Media</p>
+                <ul className="list-reset mb-6">
+                  <li className="mt-2 inline-block mr-2">
+                    <a
+                      href="/"
+                      className="no-underline hover:underline text-white hover:text-pink-500"
+                    >
+                      <FacebookIcon />
+                    </a>
+                  </li>
+                  <li className="mt-2 inline-block mr-2">
+                    <a
+                      href="/"
+                      className="no-underline hover:underline text-white hover:text-pink-500"
+                    >
+                      <TwitterIcon />
+                    </a>
+                  </li>
+                  <li className="mt-2 inline-block mr-2">
+                    <a
+                      href="/"
+                      className="no-underline hover:underline text-white hover:text-pink-500"
+                    >
+                      <InstagramIcon />
+                    </a>
+                  </li>
+                  <li className="mt-2 inline-block mr-2">
+                    <a
+                      href="/"
+                      className="no-underline hover:underline text-white hover:text-pink-500"
+                    >
+                      <Icon icon={tiktokIcon} />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="flex-1">
+                <p className="text-white md:mb-6 font-bold">Download</p>
                 <ul className="list-reset mb-6">
                   <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                     <a
@@ -65,40 +147,11 @@ class Footer extends Component {
                   </li>
                 </ul>
               </div>
-              <div className="flex-1">
-                <p className="uppercase text-gray-500 md:mb-6">Social</p>
-                <ul className="list-reset mb-6">
-                  <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                    <a
-                      href="/"
-                      className="no-underline hover:underline text-gray-800 hover:text-pink-500"
-                    >
-                      Facebook
-                    </a>
-                  </li>
-                  <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                    <a
-                      href="/"
-                      className="no-underline hover:underline text-gray-800 hover:text-pink-500"
-                    >
-                      Linkedin
-                    </a>
-                  </li>
-                  <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                    <a
-                      href="/"
-                      className="no-underline hover:underline text-gray-800 hover:text-pink-500"
-                    >
-                      Twitter
-                    </a>
-                  </li>
-                </ul>
-              </div>
               
             </div>
           </div>
         </footer>  
-            </div>
+            </section>
         );
     }
 }

@@ -1,0 +1,30 @@
+.text-HS {
+	/* color: linear-gradient(90deg, #FA89A7 0%, #ED5DBB 100%); */
+	color: #FA89A7
+}
+
+@media (max-width: 415px) {
+	.text-HS {
+		color: white;
+	}
+
+	.HW-pink {
+		background-image: linear-gradient(to right, #FA89A7, #ED5DBB);
+	}
+}
+
+h2.modal-header {
+	color: #686868;
+}
+
+.modal-info {
+	color: #686868
+}
+
+/* @media (max-width: 412px) {
+	.text-HS-pink {
+		background: -webkit-linear-gradient(#FA89A7, #ED5DBB);
+  		-webkit-background-clip: text;
+  		-webkit-text-fill-color: transparent;
+	}
+} */

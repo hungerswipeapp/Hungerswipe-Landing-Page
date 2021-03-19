@@ -5,6 +5,8 @@ import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import { useSpring, animated } from "react-spring/web.cjs";
 import "../App.css";
+import "../Modal.css";
+import EarlyAccessForm from "./EarlyAccessForm";
 const useStyles = makeStyles((theme) => ({
   modal: {
     display: "flex",
@@ -45,7 +47,7 @@ Fade.propTypes = {
   onExited: PropTypes.func,
 };
 
-export default function SpringModal() {
+export default function SpringModal(props) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
@@ -62,7 +64,7 @@ export default function SpringModal() {
       <button
         type="button"
         onClick={handleOpen}
-        className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+        className="mx-auto lg:mx-0 hover:underline rounded md:bg-white HW-pink text-HS font-bold my-6 py-4 px-12 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
       >
         Early Access
       </button>
@@ -81,32 +83,13 @@ export default function SpringModal() {
         <Fade in={open}>
           <div className={classes.paper}>
             <div class="login-box">
-              <h2 className='font-sans'>Be a part of it</h2>
-              <form>
-                <div class="user-box">
-                  <input type="text" name="" required="" />
-                  <label>Last Name</label>
-                </div>
-                <div class="user-box">
-                  <input type="text" name="" required="" />
-                  <label>First Name</label>
-                </div>
-                <div class="user-box">
-                  <input type="phone" name="" required="" />
-                  <label>Phone number</label>
-                </div>
-                <div class="user-box">
-                  <input type="email" name="" required="" />
-                  <label>email</label>
-                </div>
-                <a className='' href="#">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  Submit
-                </a>
-              </form>
+              <h2 className='font-sans font-medium text-5xl modal-header mb-2'>Be a part of it.</h2>
+              <p className='modal-info'>Are you an early adopter?</p>
+              <p className="modal-info mb-4">Sign up for free and get our news update before it’s available to the public.</p>
+              <EarlyAccessForm 
+                count={props.count}
+                incrementCount={props.incrementCount}
+              />
             </div>
           </div>
         </Fade>

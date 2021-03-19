@@ -1,0 +1,65 @@
+.gradient {
+	background: linear-gradient(90deg, #FA89A7 0%, #ED5DBB 100%);
+	color: white;
+	/* background: #FA89A7; */
+ }
+
+ .gradient-mobile {
+	background: linear-gradient(90deg, #FA89A7 0%, #ED5DBB 100%);
+	color: white;
+ }
+
+ .text-HS-pink {
+	/* color: linear-gradient(#FA89A7, #ED5DBB) */
+	color: #ED5DBB;
+}
+
+ @media (max-width: 415px) {
+ 	.gradient {
+	  background: url('../src/Assets/mobileBackground.png');
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  overflow: hidden;
+	  color: white;
+	}
+
+	.hide {
+		display: none;
+	}
+
+	.center-text {
+		text-align: center !important;
+	}
+
+	.margin-center {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	h1.HS-outline, p.HS-outline {
+		background: -webkit-linear-gradient(360deg,#F169B6, #F3B3D6, #7DCEFB);
+		-webkit-background-clip: text;
+		-webkit-text-stroke: 4px transparent;
+		color: rgb(255, 255, 255);
+	}
+
+}
+
+.gradient-button {
+	background-image: linear-gradient(to right,#F169B6, #F3B3D6, #7DCEFB);
+}
+
+h3 {
+	background: linear-gradient(to right, #FA89A7, #ED5DBB); 
+	-webkit-text-fill-color: transparent; 
+	-webkit-background-clip: text; 
+}
+
+.policy {
+	width: 75%;
+	margin: 0, auto;
+	left: 5;
+	font-size: 10px;
+	text-align: center;
+	color: #999999;
+}
