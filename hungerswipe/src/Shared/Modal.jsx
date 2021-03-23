@@ -7,11 +7,16 @@ import { useSpring, animated } from "react-spring/web.cjs";
 import "../App.css";
 import "../Modal.css";
 import EarlyAccessForm from "./EarlyAccessForm";
+import threeScreens from '../Assets/3-screens.png';
+import logo from '../Assets/LogoWhiteBig.png';
+import { IconButton } from '@material-ui/core';
+import CloseIcon from '@material-ui/icons/Close';
 const useStyles = makeStyles((theme) => ({
   modal: {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    overflow:'scroll'
   },
  
 }));
@@ -81,15 +86,33 @@ export default function SpringModal(props) {
         }}
       >
         <Fade in={open}>
-          <div className={classes.paper}>
-            <div class="login-box">
-              <h2 className='font-sans font-medium text-5xl modal-header mb-2'>Be a part of it.</h2>
-              <p className='modal-info'>Are you an early adopter?</p>
-              <p className="modal-info mb-4">Sign up for free and get our news update before it’s available to the public.</p>
-              <EarlyAccessForm 
-                count={props.count}
-                incrementCount={props.incrementCount}
-              />
+          <div className="lg:flex lg:flex-row lg:justify-center">
+            <div className="login-box rounded-l">
+              <div className="show">
+                <IconButton onClick={handleClose} style={{float: 'right', color: "#686868", marginTop: '12', marginRight: '12'}}>
+                  <CloseIcon/>
+                </IconButton>
+              </div>
+              <div className="p-10">
+                <h2 className='font-sans font-medium text-5xl modal-header mb-2'>Be a part of it.</h2>
+                <p className='modal-info'>Are you an early adopter?</p>
+                <p className="modal-info mb-4">Sign up for free and get our news update before it’s available to the public.</p>
+                  <EarlyAccessForm 
+                    count={props.count}
+                    incrementCount={props.incrementCount}
+                  />
+              </div>
+            </div>
+            <div className="hide1000 brochure rounded-r">
+              <IconButton onClick={handleClose} style={{float: 'right', color: "#686868", marginTop: '12', marginRight: '12'}}>
+                <CloseIcon/>
+              </IconButton>
+              <div className="p-12">
+                <div className="font-sans text-white font-medium text-5xl modal-header text-center mb-4">Swipe Right</div>
+                <p className="text-white text-center mb-12">To your next restaurant destination</p>
+                <img src={threeScreens} alt="3 Screens Preview" />
+                <img className="w-1/2 h-auto mt-12 mx-auto" src={logo} alt="Logo" />
+              </div>
             </div>
           </div>
         </Fade>

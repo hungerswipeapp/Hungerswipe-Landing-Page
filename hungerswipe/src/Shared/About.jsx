@@ -6,13 +6,18 @@ import customize from '../Assets/i-customize.png';
  import restuarant from '../Assets/restuarant.png';
 import filterIcon from '../Assets/i-filter.png';
 
+import '../Main.css';
+
 export default class About extends Component {
 	render() {
 		return (
 			<section id="about" className="bg-white border-b py-8">
 				<div className="container mx-auto flex flex-wrap pt-4 pb-12">
-					<h1 className="w-full my-2 text-5xl font-light leading-tight text-center text-gray-800">
+					<h1 className="w-full my-2 text-2xl md:text-4xl font-medium leading-tight text-center import HW-dark-blue">
 						WHY USE HUNGERSWIPE
+						<p className="font-bold text-2xl md:text-4xl HW-dark-blue mt-8 md:w-1/2 mx-auto">
+						Other available features for that perfect date night
+						</p>
 					</h1>
 					<div className="w-full mb-4">
 						<div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
@@ -124,8 +129,6 @@ export default class About extends Component {
 								</div>
 							</div>
 						</div>
-
-
 					</div>
 				</div>
 			</section>

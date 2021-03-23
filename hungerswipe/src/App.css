@@ -1,15 +1,34 @@
 
   .login-box {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 400px;
-    padding: 40px;
+    width: 500px;
+    /* padding: 40px; */
     transform: translate(-50%, -50%);
     background: rgba(255, 255, 255, 255);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
-    border-radius: 10px;
+    /* border-radius: 10px; */
+  }
+
+  .brochure {
+    position: absolute;
+    width: 500px;
+    height: 720px;
+    /* padding: 40px; */
+    transform: translate(50%, -50%);
+    background: rgba(255, 255, 255, 255);
+    box-sizing: border-box;
+    /* border-radius: 10px; */
+    background: linear-gradient(to right,#F169B6, #F3B3D6, #7DCEFB);
+  }
+
+  @media (max-width: 415px) {
+    .login-box {
+      width: 400px;
+      top: 50%;
+      left: 50%;
+      border-radius: 10px;
+    }
   }
   
   .login-box h2 div {

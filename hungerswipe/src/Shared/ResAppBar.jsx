@@ -10,23 +10,29 @@ import '../ResAppBar.css';
 import pinkLogo from '../Assets/HungerSwipe_Logo_pink.png';
 
 const styleSheet = {
-  list : {
-   width : 200,
+  list: {
+   width: 200,
 	 marginLeft: 'auto',
    borderRadius: '20px',
   },
-  padding : {
-    paddingRight : 30,
-    cursor : "pointer",
+  listItem: {
+    margin: '5px 0',
   },
-  sideBarIcon : {
-    padding : 0,
-    color : "#ED5DBB",
-    cursor : "pointer",
+  padding : {
+    paddingRight: 30,
+    cursor: "pointer",
+  },
+  sideBarIcon: {
+    padding: 0,
+    color: "#ED5DBB",
+    cursor: "pointer",
 	 marginLeft: 'auto'
   },
   BackdropProps: {
-    background: 'transparent'
+    background: 'transparent',
+  },
+  root: {
+    opacity: 0.5
   }
 }
 
@@ -66,7 +72,6 @@ class ResAppBar extends Component{
               <MenuIcon
                 className = {this.props.classes.sideBarIcon}
                 onClick={()=>{this.setState({drawer:true})}} />
-
               <Typography color="inherit" variant = "headline"></Typography>
               <Typography color="inherit" variant = "headline"></Typography>
             </Grid>
@@ -74,7 +79,8 @@ class ResAppBar extends Component{
         </AppBar>
 
         <SwipeableDrawer
-        classes={{ paper: this.props.classes.BackdropProps}}        
+        classes={{ 
+          paper: this.props.classes.BackdropProps}}     
 		    anchor={"top"}
         open={this.state.drawer}
         onClose={()=>{this.setState({drawer:false})}}
@@ -87,7 +93,7 @@ class ResAppBar extends Component{
              onKeyDown={()=>{this.setState({drawer:false})}}>
 
             <List className = {`${this.props.classes.list} list-item`}>
-               <ListItem key = {1} button divider ><a href="/">HOME</a></ListItem>
+               <ListItem className={this.props.classes.listItem} key = {1} button divider ><a href="/">HOME</a></ListItem>
                <ListItem key = {2} button divider ><a href="#about">ABOUT</a></ListItem>
                <ListItem key = {3} button divider ><a href="#features">FEATURES</a></ListItem>
                <ListItem key = {3} button > LOGIN </ListItem>

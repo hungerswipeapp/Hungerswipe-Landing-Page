@@ -5,7 +5,11 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import { Icon } from '@iconify/react';
 import tiktokIcon from '@iconify-icons/simple-icons/tiktok';
 
-import logo from '../Assets/logo-white.png';
+import appStore from '../Assets/APPLE-store.png';
+import playStore from '../Assets/GOOGLE-playstore.png';
+
+import logo from '../Assets/LogoWhiteBig.png';
+// import Appstore from '../Assets/Appstore.eps';
 class Footer extends Component {
     render() {
         return (
@@ -19,7 +23,7 @@ class Footer extends Component {
                   href="/"
                 >
                   
-                  <img src={logo} alt="Logo"></img>
+                  <img className="w-2/3 h-auto" src={logo} alt="Logo"></img>
                 </a>
               </div>
               <div className="flex-1">
@@ -127,22 +131,23 @@ class Footer extends Component {
               </div>
 
               <div className="flex-1">
-                <p className="text-white md:mb-6 font-bold">Download</p>
+                <p className="text-white font-bold">Download</p>
+                <p className="text-white md:mb-6 font-medium">Coming soon</p>
                 <ul className="list-reset mb-6">
                   <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                     <a
                       href="/"
                       className="no-underline hover:underline text-gray-800 hover:text-pink-500"
                     >
-                      Terms
+                      <img src={appStore} alt="Download from the Appstore" />
                     </a>
                   </li>
-                  <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <li className="mt-4 inline-block mr-2 md:block md:mr-0">
                     <a
                       href="/"
                       className="no-underline hover:underline text-gray-800 hover:text-pink-500"
                     >
-                      Privacy
+                      <img src={playStore} alt="Get it on Google Play"/>
                     </a>
                   </li>
                 </ul>

@@ -5,7 +5,6 @@ export default function Counter(props) {
 	const styles = {
 		fontSize: '14px',
 		fontWeight: '500',
-		fontFamily: 'SF Pro Text',
 		textAlign: 'center',
 		width: '75%'
 	}

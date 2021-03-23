@@ -60,11 +60,11 @@ function Main() {
 			
 			<section id="features" className="bg-white border-b py-8">
 				<div className="container max-w-5xl mx-auto m-8">
-					<h1 className="w-full my-2 text-5xl font-light leading-tight text-center text-gray-800">
+					<h1 className="w-full my-2 text-2xl md:text-4xl font-medium leading-tight text-center HW-dark-blue">
 						WHAT'S INSIDE
-						<h2 className="font-bold text-base">
+						<p className="font-bold text-2xl md:text-4xl HW-dark-blue mt-8 md:w-2/3 mx-auto">
 							Go to restaurants you like with the right match on HungerSwipe
-						</h2>
+						</p>
 					</h1>
 					<div className="w-full mb-4">
 						<div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
@@ -132,6 +132,12 @@ function Main() {
 
 			<div className="">
 				<section className="container mx-auto text-center py-6 mb-12 ">
+					<h1 className="w-full my-2 text-2xl md:text-4xl font-medium leading-tight text-center HW-dark-blue">
+						WHY USE HUNGERSWIPE
+						<p className="font-bold text-2xl md:text-4xl HW-dark-blue mt-8 md:w-2/3 mx-auto">
+							The way to win someone's heart is through their appetite
+						</p>
+					</h1>
 					<img src={appPreview} alt="App Preview"></img>
 					<button className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
 						<a href="#top">Scroll to top</a>

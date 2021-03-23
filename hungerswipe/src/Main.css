@@ -1,5 +1,5 @@
 .gradient {
-	background: linear-gradient(90deg, #FA89A7 0%, #ED5DBB 100%);
+	background: linear-gradient(to top right, #FA89A7 0%, #ED5DBB 100%);
 	color: white;
 	/* background: #FA89A7; */
  }
@@ -12,6 +12,22 @@
  .text-HS-pink {
 	/* color: linear-gradient(#FA89A7, #ED5DBB) */
 	color: #ED5DBB;
+}
+
+.HW-dark-blue {
+	color: #364680;
+}
+
+@media (min-width: 1000px) {
+	.show {
+		display: none;
+	}
+}
+
+@media (max-width: 1000px) {
+	.hide1000 {
+		display: none;
+	}
 }
 
  @media (max-width: 415px) {

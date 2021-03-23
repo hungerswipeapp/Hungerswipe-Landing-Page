@@ -15,9 +15,9 @@ class Feedback extends Component {
 	render() {
 		const { status } = this.state;
 		return (
-			<div className="bg-center bg-cover h-screen gradient-mobile">
+			<div className="bg-center bg-cover gradient-mobile">
 				<div className="text-center">
-					<h1 className="w-full my-2 md:text-5xl text-2xl font-bold md:pt-12 md:pb-8 pt-8 text-center text-800 text-white">
+					<h1 className="w-full my-2 md:text-5xl text-2xl font-semibold md:pt-12 md:pb-8 pt-8 text-center text-800 text-white">
 						We'd love to hear from you!
 					</h1>
 					<p className="mx-2 md:w-full md:text-3xl text-xl text-center text-800 text-white">
