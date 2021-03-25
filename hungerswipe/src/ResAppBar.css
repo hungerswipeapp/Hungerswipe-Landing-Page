@@ -1,5 +1,6 @@
-.list-item {
+.list_ {
 	background-image: linear-gradient(to right, #FA89A7, #ED5DBB);
 	color: white;
 	text-align: center;
+	list-style-type: none;
 }

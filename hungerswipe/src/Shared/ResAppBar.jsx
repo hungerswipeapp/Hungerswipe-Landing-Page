@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-  AppBar, Toolbar, Typography, List, ListItem,
+  AppBar, Toolbar, Typography, List, ListItem, ListItemText,
   withStyles, Grid, SwipeableDrawer
 } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -14,9 +14,12 @@ const styleSheet = {
    width: 200,
 	 marginLeft: 'auto',
    borderRadius: '20px',
+   textAlign: 'center',
+   margin: '5px'
   },
   listItem: {
-    margin: '5px 0',
+    display: 'flex',
+    alignItems: 'center'
   },
   padding : {
     paddingRight: 30,
@@ -32,7 +35,10 @@ const styleSheet = {
     background: 'transparent',
   },
   root: {
-    opacity: 0.5
+    justifyContent: 'center'
+  },
+  appbar: {
+    justifyContent: 'center'
   }
 }
 
@@ -63,9 +69,9 @@ class ResAppBar extends Component{
   createDrawer(){
     return (
       <div>
-        <AppBar position="fixed" color="white" elevation={0}>
+        <AppBar className={this.props.classes.appbar} position="fixed" color="white" elevation={0}>
           <Toolbar>
-				 <div className={this.props.classes.appBar}>
+				 <div>
 				 	<img src={pinkLogo} alt="Logo"/>
 				 </div>
             <Grid container direction = "row" justify = "space-between" alignItems="center">
@@ -92,11 +98,30 @@ class ResAppBar extends Component{
              onClick={()=>{this.setState({drawer:false})}}
              onKeyDown={()=>{this.setState({drawer:false})}}>
 
-            <List className = {`${this.props.classes.list} list-item`}>
-               <ListItem className={this.props.classes.listItem} key = {1} button divider ><a href="/">HOME</a></ListItem>
-               <ListItem key = {2} button divider ><a href="#about">ABOUT</a></ListItem>
-               <ListItem key = {3} button divider ><a href="#features">FEATURES</a></ListItem>
-               <ListItem key = {3} button > LOGIN </ListItem>
+            <List className = {`${this.props.classes.list} list_`}>
+               <ListItem 
+                className={`${this.props.classes.root}`}
+                key = {1} 
+                button 
+                divider>
+                  <a href="/"><ListItemText primary="HOME"/></a></ListItem>
+               <ListItem 
+                className={`${this.props.classes.root}`}
+                key = {2} 
+                button 
+                divider>
+                  <a href="#about">ABOUT</a></ListItem>
+               <ListItem 
+                className={`${this.props.classes.root}`}
+                key = {3} 
+                button 
+                divider>
+                  <a href="#features">FEATURES</a></ListItem>
+               <ListItem 
+                className={`${this.props.classes.root}`}
+                key = {3} 
+                button> 
+                  LOGIN </ListItem>
              </List>
 
          </div>
@@ -110,7 +135,7 @@ class ResAppBar extends Component{
   destroyDrawer(){
     const {classes} = this.props
     return (
-      <AppBar position="static" color="transparent" elevation={0}>
+      <AppBar className={this.props.classes.appbar} position="static" color="transparent" elevation={0}>
         <Toolbar>
           <Typography variant = "headline" style={{flexGrow:1}} color="inherit" ></Typography>
           <Typography variant = "subheading" className = {classes.padding} color="inherit" ><a href="/">HOME</a></Typography>
