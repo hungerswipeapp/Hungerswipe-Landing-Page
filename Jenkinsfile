@@ -8,7 +8,11 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'ls -lha '
+        sh ''' 
+        export DOCKER_HOST='34.71.41.214:4242'
+        ls -lha 
+        
+        '''
       }
     }
 
