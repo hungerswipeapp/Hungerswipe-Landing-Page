@@ -10,8 +10,11 @@ pipeline {
       steps {
         sh ''' 
         export DOCKER_HOST='34.71.41.214:4242'
+        
+        mv hungerswipe . 
         ls -lha 
-        docker ps 
+        docker build -t landing:$BUILD_NUMBER .
+
         '''
       }
     }
