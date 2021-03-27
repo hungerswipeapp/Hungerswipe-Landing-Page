@@ -1,0 +1,14 @@
+version: '3.1'
+services:
+  adminportal:
+    image: landing:{version}
+    deploy:
+      replicas: 1
+    ports:
+      - "8081:80"
+    networks:
+      - backend
+networks:
+  backend:
+    external:
+      name: prod

@@ -14,6 +14,10 @@ pipeline {
         mv ./hungerswipe/* . 
         ls -lha 
         docker build -t landing:$BUILD_NUMBER .
+        sed -i "s,{version},$BUILD_NUMBER,g" docker-swarm.yml
+        
+        cat docker-swarm.yml
+        docker stack deploy --with-registry-auth --compose-file docker-swarm.yml landing
 
         '''
       }
