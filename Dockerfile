@@ -6,9 +6,10 @@ ENV PATH /usr/src/app/node_modules/.bin:$PATH
 COPY . /usr/src/app
 RUN npm install
 # RUN npm install react-scripts@1.1.1 -g --silent
-RUN ls -lha && pwd
+
 
 RUN npm run build
+RUN ls -lha && pwd
 #RUN mv .htaccess /usr/src/app/help/htaccess
 
 # production environment
