@@ -68,3 +68,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### For deployment 
+Go to [http://cicd.thinkinglab.co](http://cicd.thinkinglab.co) login with your Google, Facebook, or Office 365 login to the portal. then go to [https://cicd.podiumcatchers.com/job/Hunger%20Swipe/job/Hungerswipe-Landing-Page/job/main/](https://cicd.podiumcatchers.com/job/Hunger%20Swipe/job/Hungerswipe-Landing-Page/job/main/) and start the new build. 
+
+
