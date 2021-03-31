@@ -1191,6 +1191,11 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
+"@iconify-icons/brandico@^1.1.0":
+  "integrity" "sha512-Av4s77ic3aqWLbxE83w11zuK583pdCeq8ZRC+PN4cdIBVcP4Nb3xBIpv+jAIecmmi1pf3q5c6joftOUCrZN5ew=="
+  "resolved" "https://registry.npmjs.org/@iconify-icons/brandico/-/brandico-1.1.0.tgz"
+  "version" "1.1.0"
+
 "@iconify-icons/simple-icons@^1.1.16":
   "integrity" "sha512-PYv+RXs+lS/G78/L5vJrrAiK45t1HD5amid3pnexRN+LWUkyX8PpjUv/lIrBHgrtphhHq3LKFjONCsVaNN7erw=="
   "resolved" "https://registry.npmjs.org/@iconify-icons/simple-icons/-/simple-icons-1.1.16.tgz"

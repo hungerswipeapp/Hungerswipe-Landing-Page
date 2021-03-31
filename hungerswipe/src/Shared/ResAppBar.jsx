@@ -24,6 +24,10 @@ const styleSheet = {
   padding : {
     paddingRight: 30,
     cursor: "pointer",
+    '&:hover': {
+      backgroundColor: '#fff',
+      color: '#3c52b2',
+    }
   },
   sideBarIcon: {
     padding: 0,
@@ -139,8 +143,8 @@ class ResAppBar extends Component{
         <Toolbar>
           <Typography variant = "headline" style={{flexGrow:1}} color="inherit" ></Typography>
           <Typography variant = "subheading" className = {classes.padding} color="inherit" ><a href="/">HOME</a></Typography>
-          <Typography variant = "subheading" className = {classes.padding} color="inherit" ><a href="#features">FEATURES</a></Typography>
           <Typography variant = "subheading" className = {classes.padding} color="inherit" ><a href="#about">ABOUT</a></Typography>
+          <Typography variant = "subheading" className = {classes.padding} color="inherit" ><a href="#features">FEATURES</a></Typography>
           <Typography variant = "subheading" className = {classes.padding} color="inherit" >LOGIN</Typography>
         </Toolbar>
       </AppBar>

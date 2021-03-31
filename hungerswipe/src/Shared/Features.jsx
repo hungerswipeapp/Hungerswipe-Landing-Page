@@ -8,10 +8,10 @@ import filterIcon from '../Assets/i-filter.png';
 
 import '../Main.css';
 
-export default class About extends Component {
+export default class Features extends Component {
 	render() {
 		return (
-			<section id="about" className="bg-white border-b py-8">
+			<section id="features" className="bg-white border-b py-8">
 				<div className="container mx-auto flex flex-wrap pt-4 pb-12">
 					<h1 className="w-full my-2 text-2xl md:text-4xl font-medium leading-tight text-center import HW-dark-blue">
 						WHY USE HUNGERSWIPE
@@ -121,7 +121,7 @@ export default class About extends Component {
 											SuperLike
 										</h3>
 										<p className="text-gray-800 text-base px-6 mb-5">
-											Want to let you friends know you really like a restaurant?
+											Want to let your friends know you really like a restaurant?
 											Use our HungerSwipe SuperLike feature to show your
 											favorite restaurant while swiping.
 										</p>

@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import TwitterIcon from '@material-ui/icons/Twitter';
-import InstagramIcon from '@material-ui/icons/Instagram';
+// import FacebookIcon from '@material-ui/icons/Facebook';
+// import TwitterIcon from '@material-ui/icons/Twitter';
+// import InstagramIcon from '@material-ui/icons/Instagram';
 import { Icon } from '@iconify/react';
 import tiktokIcon from '@iconify-icons/simple-icons/tiktok';
+import facebookIcon from '@iconify-icons/brandico/facebook-rect';
+import twitterIcon from '@iconify-icons/simple-icons/twitter';
+import instagramIcon from '@iconify-icons/simple-icons/instagram';
+import linkedInIcon from '@iconify-icons/simple-icons/linkedin';
 
 import appStore from '../Assets/APPLE-store.png';
 import playStore from '../Assets/GOOGLE-playstore.png';
 
 import logo from '../Assets/LogoWhiteBig.png';
-// import Appstore from '../Assets/Appstore.eps';
 class Footer extends Component {
     render() {
         return (
@@ -39,7 +42,7 @@ class Footer extends Component {
                   </li>
                   <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                     <a
-                      href="/"
+                      href="#about"
                       className="no-underline hover:underline text-white hover:text-pink-500"
                     >
                       About Us
@@ -47,7 +50,7 @@ class Footer extends Component {
                   </li>
                   <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                     <a
-                      href="/"
+                      href="#features"
                       className="no-underline hover:underline text-white hover:text-pink-500"
                     >
                       Features
@@ -55,7 +58,7 @@ class Footer extends Component {
                   </li>
                   <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                     <a
-                      href="/"
+                      href="#screenshots"
                       className="no-underline hover:underline text-white hover:text-pink-500"
                     >
                       Screenshots
@@ -63,7 +66,7 @@ class Footer extends Component {
                   </li>
                   <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                     <a
-                      href="/"
+                      href="#contact"
                       className="no-underline hover:underline text-white hover:text-pink-500"
                     >
                       Contact
@@ -97,32 +100,55 @@ class Footer extends Component {
                 <ul className="list-reset mb-6">
                   <li className="mt-2 inline-block mr-2">
                     <a
-                      href="/"
+                      href="https://www.facebook.com/hungerswipeapp/"
+                      target="_blank"
+                      rel="noreferrer"
+                      deeplink="true"
                       className="no-underline hover:underline text-white hover:text-pink-500"
                     >
-                      <FacebookIcon />
+                      <Icon icon={facebookIcon} />
                     </a>
                   </li>
                   <li className="mt-2 inline-block mr-2">
                     <a
-                      href="/"
+                      href="https://twitter.com/hungerswipeapp"
+                      target="_blank"
+                      rel="noreferrer"
+                      deeplink="true"
                       className="no-underline hover:underline text-white hover:text-pink-500"
                     >
-                      <TwitterIcon />
+                      <Icon icon={twitterIcon} />
                     </a>
                   </li>
                   <li className="mt-2 inline-block mr-2">
                     <a
-                      href="/"
+                      href="https://www.instagram.com/hungerswipeapp/"
+                      target="_blank"
+                      rel="noreferrer"
+                      deeplink="true"
                       className="no-underline hover:underline text-white hover:text-pink-500"
                     >
-                      <InstagramIcon />
+                      <Icon icon={instagramIcon} />
                     </a>
                   </li>
                   <li className="mt-2 inline-block mr-2">
                     <a
-                      href="/"
-                      className="no-underline hover:underline text-white hover:text-pink-500"
+                      href="https://www.linkedin.com/company/hungerswipe/"
+                      target="_blank"
+                      rel="noreferrer"
+                      deeplink="true"
+                      className="no-underline hover:underline text-white hover:text-pink-500 pt-4"
+                    >
+                      <Icon icon={linkedInIcon} />
+                    </a>
+                  </li>
+                  <li className="mt-2 inline-block mr-2">
+                    <a
+                      href="https://www.tiktok.com/@hungerswipeapp?lang=en"
+                      target="_blank"
+                      rel="noreferrer"
+                      deeplink="true"
+                      className="no-underline hover:underline text-white hover:text-pink-500 pt-4"
                     >
                       <Icon icon={tiktokIcon} />
                     </a>

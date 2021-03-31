@@ -8,10 +8,10 @@ import swiping from '../Assets/i-swipe.png';
 import logo from '../Assets/LogoWhiteBig.png';
 
 import landingMeal from '../Assets/landingMeal.png';
-import About from './About';
 
 import '../Main.css';
 import ResAppBar from './ResAppBar';
+import Features from './Features';
 
 function Main() {
 
@@ -30,14 +30,14 @@ function Main() {
 						<div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
 
 							<img className="hide" src={logo} alt="Logo"></img>
-							<h1 id="top" className="HS-outline margin-center md:my-4 mt-48 text-5xl font-black md:font-light leading-tight">
+							<h1 id="top" className="HS-outline margin-center md:my-4 mt-48 text-5xl font-black md:font-semibold leading-tight">
 								Swipe Right
 							</h1>
-							<p className="HS-outline leading-normal text-2xl md:mb-8 mb-48 font-black md:font-medium">
+							<p className="HS-outline  text-4xl md:mb-8 mb-48 font-black md:font-medium">
 								to your next restaurant destination!
 							</p>	
 							<p className="hide">
-							 Match on restaurants with your friends, Family or even that one special person in your life.
+							 	Match on restaurants with your friends, family or even that one special person in your life.
 							</p>
 							<div className="margin-center">
 								<Modal 
@@ -49,7 +49,7 @@ function Main() {
 
 						<div className="hide w-full md:w-3/5 py-6 text-center">
 							<img
-								className="w-full md:w-4/5 z-50"
+								className="w-full md:w-4/5 z-50 ml-20"
 								src={landingMeal}
 								alt="scroll threw application"
 							/>
@@ -58,8 +58,8 @@ function Main() {
 				</section>
 			</div>
 			
-			<section id="features" className="bg-white border-b py-8">
-				<div className="container max-w-5xl mx-auto m-8">
+			<section id="about" className="bg-white border-b py-8">
+				<div className="container max-w-7xl mx-auto m-8">
 					<h1 className="w-full my-2 text-2xl md:text-4xl font-medium leading-tight text-center HW-dark-blue">
 						WHAT'S INSIDE
 						<p className="font-bold text-2xl md:text-4xl HW-dark-blue mt-8 md:w-2/3 mx-auto">
@@ -76,7 +76,7 @@ function Main() {
 								src={userFriendlyIcon}
 								alt="User Friendly"
 							/>
-							<h3 className="text-3xl text-blue-800 font-bold leading-none mb-3">
+							<h3 className="text-3xl text-blue-800 font-bold mb-3">
 								User Friendly
 							</h3>
 							<p className="text-gray-600 mb-8">
@@ -93,12 +93,12 @@ function Main() {
 									src={swiping}
 									alt="User Friendly"
 								/>
-								<h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
+								<h3 className="text-3xl text-gray-800 font-bold mb-3">
 									Swiping Left & Right
 								</h3>
 								<p className="text-gray-600 mb-8">
 									Swipe left and right for an easy way of finding your favorite
-									restaurants! It’s fun, easy, and ejoyable to do with your
+									restaurants! It’s fun, easy, and enjoyable to do with your
 									friends.
 									<br />
 									<br />
@@ -112,7 +112,7 @@ function Main() {
 									src={manageMatches}
 									alt="Managing Matches"
 								/>
-								<h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
+								<h3 className="text-3xl text-gray-800 font-bold mb-3">
 									Managing Matches
 								</h3>
 								<p className="text-gray-600 mb-8">
@@ -128,9 +128,9 @@ function Main() {
 				</div>
 			</section>
 
-			<About />
+			<Features />
 
-			<div className="">
+			<div id="screenshots" className="">
 				<section className="container mx-auto text-center py-6 mb-12 ">
 					<h1 className="w-full my-2 text-2xl md:text-4xl font-medium leading-tight text-center HW-dark-blue">
 						WHY USE HUNGERSWIPE
