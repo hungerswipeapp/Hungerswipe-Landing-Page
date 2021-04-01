@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {
   AppBar, Toolbar, Typography, List, ListItem, ListItemText,
-  withStyles, Grid, SwipeableDrawer
+  withStyles, Grid, SwipeableDrawer, Button
 } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 
@@ -22,11 +22,12 @@ const styleSheet = {
     alignItems: 'center'
   },
   padding : {
-    paddingRight: 30,
+    
     cursor: "pointer",
+    fontWeight: "bold",
     '&:hover': {
       backgroundColor: '#fff',
-      color: '#3c52b2',
+      color: '#ED5DBB',
     }
   },
   sideBarIcon: {
@@ -142,10 +143,10 @@ class ResAppBar extends Component{
       <AppBar className={this.props.classes.appbar} position="static" color="transparent" elevation={0}>
         <Toolbar>
           <Typography variant = "headline" style={{flexGrow:1}} color="inherit" ></Typography>
-          <Typography variant = "subheading" className = {classes.padding} color="inherit" ><a href="/">HOME</a></Typography>
-          <Typography variant = "subheading" className = {classes.padding} color="inherit" ><a href="#about">ABOUT</a></Typography>
-          <Typography variant = "subheading" className = {classes.padding} color="inherit" ><a href="#features">FEATURES</a></Typography>
-          <Typography variant = "subheading" className = {classes.padding} color="inherit" >LOGIN</Typography>
+          <Button variant = "subheading" className = {classes.padding} color="inherit" ><a href="/">HOME</a></Button>
+          <Button variant = "subheading" className = {classes.padding} color="inherit" ><a href="#about">ABOUT</a></Button>
+          <Button variant = "subheading" className = {classes.padding} color="inherit" ><a href="#features">FEATURES</a></Button>
+          <Button variant = "subheading" className = {classes.padding} color="inherit" >LOGIN</Button>
         </Toolbar>
       </AppBar>
     )
