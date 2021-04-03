@@ -49,9 +49,12 @@
     margin-bottom: 30px;
     border-style: solid;
     border-width: 2px;
-    border-image: linear-gradient(to right,#F169B6, #F3B3D6, #7DCEFB) 0 0 1 0;
+    border-image: linear-gradient(to right,#F169B6, #F3B3D6, #7DCEFB);
+    border-image-slice: 0 0 1 0;
     outline: none;
+    -webkit-appearance: none;
   }
+
   .login-box .user-box label {
     position: absolute;
     top:0;

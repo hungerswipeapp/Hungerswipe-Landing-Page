@@ -100,7 +100,7 @@ class Footer extends Component {
                 <ul className="list-reset mb-6">
                   <li className="mt-2 inline-block mr-2">
                     <a
-                      href="https://www.facebook.com/hungerswipeapp/"
+                      href="fb://profile/105271334556866"
                       target="_blank"
                       rel="noreferrer"
                       deeplink="true"

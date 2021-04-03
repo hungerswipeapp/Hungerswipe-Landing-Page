@@ -22,10 +22,10 @@ export default class Features extends Component {
 					<div className="w-full mb-4">
 						<div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
 					</div>
-					<div className="grid lg:grid-cols-3 md:grid-cols-3">
+					<div className="grid lg:grid-cols-3 md:grid-cols-3 items-start">
 
 						<div className="col-span-1">
-							<div className="w-full p-6 text-center">
+							<div className="w-full md:py-10 md:px-6 p-6 text-center">
 								<div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
 									<div className="flex flex-wrap no-underline hover:no-underline">
 										<p className="w-full text-gray-600 text-xs md:text-sm px-6">
@@ -46,7 +46,7 @@ export default class Features extends Component {
 									</div>
 								</div>
 							</div>
-							<div className="w-full p-6 flex flex-col flex-grow flex-shrink text-center">
+							<div className="w-full p-6 md:pt-14 md:pb-10 flex flex-col flex-grow flex-shrink text-center">
 								<div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
 									<div className="flex flex-wrap no-underline hover:no-underline">
 										<p className="w-full text-gray-600 text-xs md:text-sm px-6">

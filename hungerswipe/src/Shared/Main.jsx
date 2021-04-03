@@ -79,7 +79,7 @@ function Main() {
 							<h3 className="text-3xl text-blue-800 font-bold mb-3">
 								User Friendly
 							</h3>
-							<p className="text-gray-600 mb-8">
+							<p className="text-black mb-8">
 								With a modern user interface and easy user experience, it will
 								be fun and easy to navigate your way through the app.
 								<br />
@@ -96,7 +96,7 @@ function Main() {
 								<h3 className="text-3xl text-gray-800 font-bold mb-3">
 									Swiping Left & Right
 								</h3>
-								<p className="text-gray-600 mb-8">
+								<p className="text-black mb-8">
 									Swipe left and right for an easy way of finding your favorite
 									restaurants! It’s fun, easy, and enjoyable to do with your
 									friends.
@@ -115,7 +115,7 @@ function Main() {
 								<h3 className="text-3xl text-gray-800 font-bold mb-3">
 									Managing Matches
 								</h3>
-								<p className="text-gray-600 mb-8">
+								<p className="text-black mb-8">
 									Swipe until you and your friends match on a restaurant. This
 									will occur after everyone in the group has swiped right on the
 									same restaurant or bar.

@@ -1,8 +1,9 @@
 import React from "react";
 import Counter from "./Counter";
 
-import '../Main.css';
+import MuiAlert from '@material-ui/lab/Alert';
 
+import '../Main.css';
 export default class EarlyAccessForm extends React.Component {
   constructor(props) {
     super(props);
@@ -27,27 +28,31 @@ export default class EarlyAccessForm extends React.Component {
 
   render() {
     const { status } = this.state;
+    
     return (
-
     <>
       <form id="form" action="https://formspree.io/f/mgepgqnb" method="POST" onSubmit={this.submitForm}>
-                <div class="user-box">
+                <div className="user-box">
                   <input type="text" name="lastName" placeholder="Last Name" required="true" />
                 </div>
-                <div class="user-box">
+                <div className="user-box">
                   <input type="text" name="firstName" placeholder="First Name" required="true" />
                 </div>
-                <div class="user-box">
+                <div className="user-box">
                   <input type="phone" name="phoneNumber" placeholder="Phone Number" required="true" />
                 </div>
-                <div class="user-box">
+                <div className="user-box">
                   <input type="email" name="email" placeholder="Email" required="true" />
                 </div>
-                {status === "SUCCESS" ? <p>Thanks!</p> : <button id="Submit" 
-                                                                name="Submit" 
-                                                                className="flex justify-center gradient-button text-white font-bold py-3 px-12 rounded mx-auto"
-                                                                >
-                                                                Early Access</button>}
+                {status === "SUCCESS" ? <MuiAlert style={{width: '60%', margin: 'auto'}} variant="filled" severity="success">
+                                          Thank you for signing up!
+                                        </MuiAlert> 
+                
+                                      : <button id="Submit" 
+                                          name="Submit" 
+                                          className="flex justify-center gradient-button text-white font-bold py-3 px-12 rounded mx-auto"
+                                          >
+                                          Early Access</button>}
                 {status === "ERROR" && <p>Ooops! There was an error.</p>}
                 {/* <a className='' href="#">
                 
