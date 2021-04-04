@@ -19,7 +19,7 @@
     background: rgba(255, 255, 255, 255);
     box-sizing: border-box;
     /* border-radius: 10px; */
-    background: linear-gradient(to right,#F169B6, #F3B3D6, #7DCEFB);
+    background: linear-gradient(79.22deg, #F169B6 -15.45%, #F3B3D6 46.77%, #7DCEFB 124.31%, #586C9D 193.19%);
   }
 
   @media (max-width: 415px) {
@@ -49,7 +49,7 @@
     margin-bottom: 30px;
     border-style: solid;
     border-width: 2px;
-    border-image: linear-gradient(to right,#F169B6, #F3B3D6, #7DCEFB);
+    border-image: linear-gradient(79.22deg, #F169B6 -15.45%, #F3B3D6 46.77%, #7DCEFB 124.31%, #586C9D 193.19%);
     border-image-slice: 0 0 1 0;
     outline: none;
     -webkit-appearance: none;

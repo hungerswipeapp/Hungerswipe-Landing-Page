@@ -53,7 +53,7 @@
 	}
 
 	h1.HS-outline, p.HS-outline {
-		background: -webkit-linear-gradient(360deg,#F169B6, #F3B3D6, #7DCEFB);
+		background: -webkit-linear-gradient(79.22deg, #F169B6 -15.45%, #F3B3D6 46.77%, #7DCEFB 124.31%, #586C9D 193.19%);
 		-webkit-background-clip: text;
 		-webkit-text-stroke: 4px transparent;
 		color: rgb(255, 255, 255);
@@ -62,7 +62,7 @@
 }
 
 .gradient-button {
-	background-image: linear-gradient(to right,#F169B6, #F3B3D6, #7DCEFB);
+	background-image: linear-gradient(79.22deg, #F169B6 -15.45%, #F3B3D6 46.77%, #7DCEFB 124.31%, #586C9D 193.19%);
 }
 
 h3 {
