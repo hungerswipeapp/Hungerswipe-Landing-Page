@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@iconify-icons/brandico": "^1.1.0",
+    "@iconify-icons/simple-icons": "^1.1.16",
+    "@iconify/react": "^1.1.4",
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.57",
@@ -11,10 +14,12 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "autoprefixer": "^9.8.6",
+    "chokidar": "^3.5.2",
     "jquery": "^3.5.1",
     "postcss": "^7.0.35",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
     "react-scripts": "4.0.1",
     "react-spring": "^8.0.27",
     "reactjs-popup": "^2.0.4",
@@ -45,9 +50,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "@iconify-icons/brandico": "^1.1.0",
-    "@iconify-icons/simple-icons": "^1.1.16",
-    "@iconify/react": "^1.1.4"
-  }
+  "devDependencies": {}
 }
