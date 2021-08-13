@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.822dc161.chunk.css",
+    "main.js": "/static/js/main.50d3e896.chunk.js",
+    "main.js.map": "/static/js/main.50d3e896.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.bb098b21.js",
+    "runtime-main.js.map": "/static/js/runtime-main.bb098b21.js.map",
+    "static/js/2.14dfd87d.chunk.js": "/static/js/2.14dfd87d.chunk.js",
+    "static/js/2.14dfd87d.chunk.js.map": "/static/js/2.14dfd87d.chunk.js.map",
+    "static/js/3.841988ee.chunk.js": "/static/js/3.841988ee.chunk.js",
+    "static/js/3.841988ee.chunk.js.map": "/static/js/3.841988ee.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.822dc161.chunk.css.map": "/static/css/main.822dc161.chunk.css.map",
+    "static/js/2.14dfd87d.chunk.js.LICENSE.txt": "/static/js/2.14dfd87d.chunk.js.LICENSE.txt",
+    "static/media/3-screens.d31515f5.png": "/static/media/3-screens.d31515f5.png",
+    "static/media/LogoWhiteBig.a2a3db6c.png": "/static/media/LogoWhiteBig.a2a3db6c.png",
+    "static/media/favicon.e315995f.ico": "/static/media/favicon.e315995f.ico",
+    "static/media/landingMeal.c8387c77.png": "/static/media/landingMeal.c8387c77.png",
+    "static/media/Main.css": "/static/media/mobileBackground.eac8904d.png",
+    "static/media/preview.1f86fda7.png": "/static/media/preview.1f86fda7.png",
+    "static/media/restuarant.2916d515.png": "/static/media/restuarant.2916d515.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bb098b21.js",
+    "static/js/2.14dfd87d.chunk.js",
+    "static/css/main.822dc161.chunk.css",
+    "static/js/main.50d3e896.chunk.js"
+  ]
+}

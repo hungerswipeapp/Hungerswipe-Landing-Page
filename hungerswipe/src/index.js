@@ -2,12 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Privacy from './Privacy';
+import { BrowserRouter as Router, Route, Link,  Switch } from 'react-router-dom'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+  <Route exact path = "/" component = {App}/>
+     <Route path = "/privacy" component = {Privacy} />
+     {/* <Route path = "about" component = {About} />
+     <Route path = "contact" component = {Contact} /> */}
+</Router>,
   document.getElementById('root')
 );
 

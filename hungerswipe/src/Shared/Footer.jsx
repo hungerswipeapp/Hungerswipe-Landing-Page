@@ -87,7 +87,7 @@ class Footer extends Component {
                   </li>
                   <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                     <a
-                      href="/"
+                      href="/privacy"
                       className="no-underline hover:underline text-white hover:text-pink-500"
                     >
                       Privacy
